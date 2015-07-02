@@ -15,6 +15,6 @@
 - (void)networkRequestWithURL:(NSString *)endString andKey:(NSString *)key;
 
 @property (strong, nonatomic) NSArray *quakes;
-@property (strong, nonatomic) Quake *selectedQuake;
+@property (strong, nonatomic) Quake   *selectedQuake;
 
 @end

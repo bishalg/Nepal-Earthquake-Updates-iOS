@@ -16,13 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        [self networkRequestWithURL:@"yesterday.php" andKey:@"yesterday"];
-    // Do any additional setup after loading the view.
+    [self makeNetworkRequest];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)makeNetworkRequest {
+    [self networkRequestWithURL:@"yesterday.php" andKey:@"yesterday"];
+}
+
+- (void)refreshButtonAction:(id)sender {
+    [self makeNetworkRequest];
+}
+
+- (void)graphButtonAction:(id)sender {
 }
 
 /*

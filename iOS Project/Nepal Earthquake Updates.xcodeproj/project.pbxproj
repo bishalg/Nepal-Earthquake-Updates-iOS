@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD6807551B0A35F80007DAD1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6807541B0A35F80007DAD1 /* MapKit.framework */; };
 		DD68076B1B0ABCA40007DAD1 /* EarthQuakeListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68075C1B0ABCA40007DAD1 /* EarthQuakeListTVC.m */; };
 		DD68076C1B0ABCA40007DAD1 /* ThisMonthListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68075E1B0ABCA40007DAD1 /* ThisMonthListTVC.m */; };
 		DD68076D1B0ABCA40007DAD1 /* ThisYearListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6807601B0ABCA40007DAD1 /* ThisYearListTVC.m */; };
@@ -15,12 +14,14 @@
 		DD68076F1B0ABCA40007DAD1 /* YesterdayListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6807641B0ABCA40007DAD1 /* YesterdayListTVC.m */; };
 		DD6807701B0ABCA40007DAD1 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6807671B0ABCA40007DAD1 /* MapVC.m */; };
 		DD6807711B0ABCA40007DAD1 /* Quake.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68076A1B0ABCA40007DAD1 /* Quake.m */; };
-		DD6807751B0AC2610007DAD1 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6807741B0AC2610007DAD1 /* APIRequest.m */; };
-		DDEC52351B09FA08009EA8AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEC52341B09FA08009EA8AF /* main.m */; };
-		DDEC52381B09FA08009EA8AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEC52371B09FA08009EA8AF /* AppDelegate.m */; };
-		DDEC52411B09FA08009EA8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEC523F1B09FA08009EA8AF /* Main.storyboard */; };
-		DDEC52431B09FA08009EA8AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEC52421B09FA08009EA8AF /* Images.xcassets */; };
-		DDEC52461B09FA08009EA8AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEC52441B09FA08009EA8AF /* LaunchScreen.xib */; };
+		DD911E671B4403F8001B5263 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD911E651B4403F8001B5263 /* GraphView.swift */; };
+		DD911E6B1B442BE8001B5263 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD911E6A1B442BE8001B5263 /* APIRequest.m */; };
+		DD911E711B442C21001B5263 /* GraphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD911E701B442C21001B5263 /* GraphVC.swift */; };
+		DD911E831B44B664001B5263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD911E7F1B44B664001B5263 /* AppDelegate.m */; };
+		DD911E851B44B664001B5263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD911E811B44B664001B5263 /* main.m */; };
+		DD911E8B1B44B682001B5263 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD911E871B44B682001B5263 /* LaunchScreen.xib */; };
+		DD911E8C1B44B682001B5263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD911E891B44B682001B5263 /* Main.storyboard */; };
+		DD911E8E1B44B785001B5263 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD911E8D1B44B785001B5263 /* Info.plist */; };
 		DDEC52521B09FA08009EA8AF /* Nepal_Earthquake_UpdatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEC52511B09FA08009EA8AF /* Nepal_Earthquake_UpdatesTests.m */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD6807541B0A35F80007DAD1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DD68075B1B0ABCA40007DAD1 /* EarthQuakeListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthQuakeListTVC.h; sourceTree = "<group>"; };
 		DD68075C1B0ABCA40007DAD1 /* EarthQuakeListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthQuakeListTVC.m; sourceTree = "<group>"; };
 		DD68075D1B0ABCA40007DAD1 /* ThisMonthListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThisMonthListTVC.h; sourceTree = "<group>"; };
@@ -50,16 +50,18 @@
 		DD6807671B0ABCA40007DAD1 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
 		DD6807691B0ABCA40007DAD1 /* Quake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quake.h; sourceTree = "<group>"; };
 		DD68076A1B0ABCA40007DAD1 /* Quake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quake.m; sourceTree = "<group>"; };
-		DD6807731B0AC2610007DAD1 /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
-		DD6807741B0AC2610007DAD1 /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
+		DD911E651B4403F8001B5263 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		DD911E691B442BE8001B5263 /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		DD911E6A1B442BE8001B5263 /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
+		DD911E701B442C21001B5263 /* GraphVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphVC.swift; sourceTree = "<group>"; };
+		DD911E7E1B44B664001B5263 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD911E7F1B44B664001B5263 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD911E811B44B664001B5263 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD911E821B44B664001B5263 /* Nepal_Earthquake_Updates-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nepal_Earthquake_Updates-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD911E881B44B682001B5263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		DD911E8A1B44B682001B5263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		DD911E8D1B44B785001B5263 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDEC522F1B09FA08009EA8AF /* Nepal Earthquake Updates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nepal Earthquake Updates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDEC52331B09FA08009EA8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDEC52341B09FA08009EA8AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DDEC52361B09FA08009EA8AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DDEC52371B09FA08009EA8AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DDEC52401B09FA08009EA8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DDEC52421B09FA08009EA8AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DDEC52451B09FA08009EA8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DDEC524B1B09FA08009EA8AF /* Nepal Earthquake UpdatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nepal Earthquake UpdatesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEC52501B09FA08009EA8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDEC52511B09FA08009EA8AF /* Nepal_Earthquake_UpdatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nepal_Earthquake_UpdatesTests.m; sourceTree = "<group>"; };
@@ -70,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD6807551B0A35F80007DAD1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +88,7 @@
 		DD6807591B0ABCA40007DAD1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD911E6F1B442C21001B5263 /* GraphVC */,
 				DD68075A1B0ABCA40007DAD1 /* ListVC */,
 				DD6807651B0ABCA40007DAD1 /* MapVC */,
 			);
@@ -98,14 +100,14 @@
 			children = (
 				DD68075B1B0ABCA40007DAD1 /* EarthQuakeListTVC.h */,
 				DD68075C1B0ABCA40007DAD1 /* EarthQuakeListTVC.m */,
-				DD68075D1B0ABCA40007DAD1 /* ThisMonthListTVC.h */,
-				DD68075E1B0ABCA40007DAD1 /* ThisMonthListTVC.m */,
-				DD68075F1B0ABCA40007DAD1 /* ThisYearListTVC.h */,
-				DD6807601B0ABCA40007DAD1 /* ThisYearListTVC.m */,
 				DD6807611B0ABCA40007DAD1 /* TodayListTVC.h */,
 				DD6807621B0ABCA40007DAD1 /* TodayListTVC.m */,
 				DD6807631B0ABCA40007DAD1 /* YesterdayListTVC.h */,
 				DD6807641B0ABCA40007DAD1 /* YesterdayListTVC.m */,
+				DD68075D1B0ABCA40007DAD1 /* ThisMonthListTVC.h */,
+				DD68075E1B0ABCA40007DAD1 /* ThisMonthListTVC.m */,
+				DD68075F1B0ABCA40007DAD1 /* ThisYearListTVC.h */,
+				DD6807601B0ABCA40007DAD1 /* ThisYearListTVC.m */,
 			);
 			path = ListVC;
 			sourceTree = "<group>";
@@ -128,14 +130,51 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		DD6807721B0AC2430007DAD1 /* Request */ = {
+		DD911E641B4403F8001B5263 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DD6807731B0AC2610007DAD1 /* APIRequest.h */,
-				DD6807741B0AC2610007DAD1 /* APIRequest.m */,
+				DD911E651B4403F8001B5263 /* GraphView.swift */,
 			);
-			name = Request;
-			path = Controllers/Request;
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD911E681B442BE8001B5263 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DD911E691B442BE8001B5263 /* APIRequest.h */,
+				DD911E6A1B442BE8001B5263 /* APIRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DD911E6F1B442C21001B5263 /* GraphVC */ = {
+			isa = PBXGroup;
+			children = (
+				DD911E701B442C21001B5263 /* GraphVC.swift */,
+			);
+			path = GraphVC;
+			sourceTree = "<group>";
+		};
+		DD911E7D1B44B664001B5263 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DD911E7E1B44B664001B5263 /* AppDelegate.h */,
+				DD911E7F1B44B664001B5263 /* AppDelegate.m */,
+				DD911E861B44B682001B5263 /* Base.lproj */,
+				DD911E8D1B44B785001B5263 /* Info.plist */,
+				DD911E811B44B664001B5263 /* main.m */,
+				DD911E821B44B664001B5263 /* Nepal_Earthquake_Updates-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DD911E861B44B682001B5263 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				DD911E871B44B682001B5263 /* LaunchScreen.xib */,
+				DD911E891B44B682001B5263 /* Main.storyboard */,
+			);
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 		DDEC52261B09FA07009EA8AF = {
@@ -159,27 +198,13 @@
 		DDEC52311B09FA08009EA8AF /* Nepal Earthquake Updates */ = {
 			isa = PBXGroup;
 			children = (
-				DD6807721B0AC2430007DAD1 /* Request */,
+				DD911E681B442BE8001B5263 /* Request */,
+				DD911E641B4403F8001B5263 /* View */,
 				DD6807681B0ABCA40007DAD1 /* Model */,
 				DD6807591B0ABCA40007DAD1 /* Controllers */,
-				DDEC52321B09FA08009EA8AF /* Supporting Files */,
+				DD911E7D1B44B664001B5263 /* SupportingFiles */,
 			);
 			path = "Nepal Earthquake Updates";
-			sourceTree = "<group>";
-		};
-		DDEC52321B09FA08009EA8AF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DDEC52361B09FA08009EA8AF /* AppDelegate.h */,
-				DDEC52371B09FA08009EA8AF /* AppDelegate.m */,
-				DDEC523F1B09FA08009EA8AF /* Main.storyboard */,
-				DDEC52421B09FA08009EA8AF /* Images.xcassets */,
-				DDEC52441B09FA08009EA8AF /* LaunchScreen.xib */,
-				DDEC52331B09FA08009EA8AF /* Info.plist */,
-				DDEC52341B09FA08009EA8AF /* main.m */,
-				DD6807541B0A35F80007DAD1 /* MapKit.framework */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DDEC524E1B09FA08009EA8AF /* Nepal Earthquake UpdatesTests */ = {
@@ -279,9 +304,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDEC52411B09FA08009EA8AF /* Main.storyboard in Resources */,
-				DDEC52461B09FA08009EA8AF /* LaunchScreen.xib in Resources */,
-				DDEC52431B09FA08009EA8AF /* Images.xcassets in Resources */,
+				DD911E8C1B44B682001B5263 /* Main.storyboard in Resources */,
+				DD911E8B1B44B682001B5263 /* LaunchScreen.xib in Resources */,
+				DD911E8E1B44B785001B5263 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,15 +324,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD911E831B44B664001B5263 /* AppDelegate.m in Sources */,
 				DD68076C1B0ABCA40007DAD1 /* ThisMonthListTVC.m in Sources */,
 				DD6807701B0ABCA40007DAD1 /* MapVC.m in Sources */,
 				DD68076E1B0ABCA40007DAD1 /* TodayListTVC.m in Sources */,
+				DD911E671B4403F8001B5263 /* GraphView.swift in Sources */,
 				DD6807711B0ABCA40007DAD1 /* Quake.m in Sources */,
-				DDEC52381B09FA08009EA8AF /* AppDelegate.m in Sources */,
 				DD68076B1B0ABCA40007DAD1 /* EarthQuakeListTVC.m in Sources */,
+				DD911E711B442C21001B5263 /* GraphVC.swift in Sources */,
+				DD911E6B1B442BE8001B5263 /* APIRequest.m in Sources */,
 				DD68076D1B0ABCA40007DAD1 /* ThisYearListTVC.m in Sources */,
-				DDEC52351B09FA08009EA8AF /* main.m in Sources */,
-				DD6807751B0AC2610007DAD1 /* APIRequest.m in Sources */,
+				DD911E851B44B664001B5263 /* main.m in Sources */,
 				DD68076F1B0ABCA40007DAD1 /* YesterdayListTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,20 +358,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DDEC523F1B09FA08009EA8AF /* Main.storyboard */ = {
+		DD911E871B44B682001B5263 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DDEC52401B09FA08009EA8AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DDEC52441B09FA08009EA8AF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDEC52451B09FA08009EA8AF /* Base */,
+				DD911E881B44B682001B5263 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		DD911E891B44B682001B5263 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD911E8A1B44B682001B5263 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,7 +415,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +453,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -439,6 +467,7 @@
 				INFOPLIST_FILE = "Nepal Earthquake Updates/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nepal Earthquake Updates/SupportingFiles/Nepal_Earthquake_Updates-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -449,6 +478,7 @@
 				INFOPLIST_FILE = "Nepal Earthquake Updates/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nepal Earthquake Updates/SupportingFiles/Nepal_Earthquake_Updates-Bridging-Header.h";
 			};
 			name = Release;
 		};

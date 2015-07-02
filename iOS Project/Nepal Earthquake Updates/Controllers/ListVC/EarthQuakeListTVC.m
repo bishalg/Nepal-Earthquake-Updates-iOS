@@ -28,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self designNavBar];
     
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = YES;
@@ -40,6 +41,26 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Navigation Bar
+
+- (void)designNavBar {
+    UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+                                                                                   target:self
+                                                                                   action:@selector(refreshButtonAction:)];
+    UIBarButtonItem *graphButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
+                                                                                 target:self
+                                                                                 action:@selector(graphButtonAction:)];
+    self.navigationItem.rightBarButtonItems = @[refreshButton, graphButton];
+}
+
+- (void)refreshButtonAction:(id)sender {
+    NSAssert(NO, @"refreshButtonAction is an abstract method and should be overridden");
+}
+
+- (void)graphButtonAction:(id)sender {
+    NSAssert(NO, @"graphButtonAction is an abstract method and should be overridden");
 }
 
 #pragma mark - Table view data source

@@ -17,12 +17,23 @@
 // Do any additional setup after loading the view.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self networkRequestWithURL:@"thisyr.php" andKey:@"thisyr"];
+    [self makeNetworkRequest];
 }
 
 // Dispose of any resources that can be recreated.
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)makeNetworkRequest {
+    [self networkRequestWithURL:@"thisyr.php" andKey:@"thisyr"];
+}
+
+- (void)refreshButtonAction:(id)sender {
+    [self makeNetworkRequest];
+}
+
+- (void)graphButtonAction:(id)sender {
 }
 
 /*

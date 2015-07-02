@@ -44,6 +44,8 @@
     self.sessionBlock = block;
     NSString *urlString = [NSString stringWithFormat:@"http://mls.com.np/MLS/nepalquake/%@", self.endString];
     
+    NSLog(@"Request URL %@", urlString);
+    
     NSURLSessionConfiguration *sessionConfig =
     [NSURLSessionConfiguration defaultSessionConfiguration];
     
@@ -100,7 +102,6 @@
         [self.quakes addObject:quake];
     }
     self.sessionBlock(self.quakes, nil);
-    // [self.tableView reloadData];
 }
 
 @end

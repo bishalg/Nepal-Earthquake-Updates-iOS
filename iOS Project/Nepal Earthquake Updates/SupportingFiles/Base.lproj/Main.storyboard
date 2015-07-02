@@ -65,7 +65,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Rhy-7P-2SG"/>
                     <connections>
-                        <segue destination="5AX-Yc-ePr" kind="show" identifier="GraphViewSegue" id="54q-yP-ByI"/>
+                        <segue destination="5AX-Yc-ePr" kind="show" identifier="GraphVCSegue" id="54q-yP-ByI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mt2-1V-yRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
