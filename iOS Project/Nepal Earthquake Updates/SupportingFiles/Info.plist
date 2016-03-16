@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Nepal Earthquake Updates</string>
 	<key>CFBundleIdentifier</key>
-	<string>np.com.bishalghimire.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>np.com.bishalghimire.Nepal-Earthquake-Updates</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
