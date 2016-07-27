@@ -1,4 +1,8 @@
 language: objective-c
+before_install:
+    - brew update
+    - brew install xctool
 osx_image: xcode7.3
-xcode_project: iOS\ Project/Nepal\ Earthquake\ Updates.xcodeproj
-xcode_scheme: Nepal\ Earthquake\ Updates
+
+xcode_project: iOS Project/Nepal Earthquake Updates.xcodeproj
+xcode_scheme: Nepal Earthquake Updates
